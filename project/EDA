@@ -1,0 +1,16 @@
+import numpy as n
+import pandas as pd
+#print(numpy.__version__)
+#print(pandas.__version__)
+data = pd.read_csv(r"D:\SIMRAN\Projects\customer_churn_data.csv")
+print (data)
+df = pd.read_csv(r"D:\SIMRAN\Projects\customer_churn_data.csv")
+
+#Descriptive Analysis (The Statistical Backbone)
+# 1. Summary statistics for numerical features
+print("--- Numerical Data Summary ---")
+print(df[['tenure', 'MonthlyCharges', 'TotalCharges']].describe())
+
+# 2. Frequency distribution for target classification (Imbalance check)
+print("\n--- Target Variable Distribution (Churn) ---")
+print(df['Churn'].value_counts(normalize=True) * 100)

@@ -1,0 +1,23 @@
+import numpy as n
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+#print(matplotlib.__version__)
+#print(numpy.__version__)
+#print(pandas.__version__)
+#data = pd.read_csv(r"D:\SIMRAN\Projects\customer_churn_data.csv")
+#print (data)
+dataset = pd.read_csv("D:\SIMRAN\Projects\customer_churn_data.csv")
+
+print (dataset)
+#print(dataset.isnull().sum())
+#print(dataset.describe())
+
+#print(dataset['Churn'].value_counts())
+
+#sns.countplot(x='Churn', data=dataset, palette='coolwarm')
+#plt.title('Churn Distribution')
+#plt.xlabel('Churn (0 = No, 1 = Yes)')
+#plt.ylabel('Count')
+#plt.show()
